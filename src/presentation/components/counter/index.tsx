@@ -1,5 +1,5 @@
 import { useAppDispatch, useAppSelector } from '../../../core/hooks/redux';
-import { decrement, increment } from '../../../domain/redux/features/counter/counterSlice';
+import { decrement, increment } from '../../../domain/redux/features/counterSlice';
 
 import styles from './index.module.scss';
 
