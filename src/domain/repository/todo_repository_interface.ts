@@ -1,5 +1,5 @@
-import { PostModel } from '../../data/models/post_model';
+import { TodoModel } from '../../data/models/post_model';
 
 export interface TodoRepositoryInterface {
-	getPostById(postId: string): Promise<PostModel>;
+	getPostById(postId: string): Promise<TodoModel>;
 }
