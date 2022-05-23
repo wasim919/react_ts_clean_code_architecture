@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import { di } from '../../../core/injection_container';
 import { TodoRepository } from '../../../data/repository/todo_repository';
+import { CounterComponent } from '../../components';
+
+import styles from './index.module.scss';
 
 function Dashboard() {
 	useEffect(() => {
@@ -15,7 +18,12 @@ function Dashboard() {
 			console.error(error);
 		}
 	};
-	return <div>Dashboard</div>;
+	return (
+		<div className={styles.container}>
+			Dashboard
+			<CounterComponent />
+		</div>
+	);
 }
 
 export default Dashboard;
