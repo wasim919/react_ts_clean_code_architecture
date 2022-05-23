@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { di } from '../../../core/injection_container';
 import { TodoRepository } from '../../../data/repository/todo_repository';
 
-function Dasbhoard() {
+function Dashboard() {
 	useEffect(() => {
 		fetchInitialData();
 	}, []);
@@ -18,4 +18,4 @@ function Dasbhoard() {
 	return <div>Dashboard</div>;
 }
 
-export default Dasbhoard;
+export default Dashboard;
